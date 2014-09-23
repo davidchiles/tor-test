@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */; };
+		63032CE519D22228008D836A /* TRTTorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE419D22228008D836A /* TRTTorManager.m */; };
+		634B8D2319D1E1E8008969CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2219D1E1E8008969CB /* main.m */; };
+		634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2519D1E1E8008969CB /* AppDelegate.m */; };
+		634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2D19D1E1E8008969CB /* Images.xcassets */; };
+		634B8D3119D1E1E8008969CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */; };
+		634B8D3D19D1E1E8008969CB /* TorTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D3C19D1E1E8008969CB /* TorTestTests.m */; };
+		6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */; };
+		6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360A84519D1FB68001E50FC /* TRTTestRecord.m */; };
+		63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */; };
+		63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */; };
+		63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */; };
+		76B893583269488D963E0425 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8903907064341A6574348 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		634B8D3719D1E1E8008969CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634B8D1519D1E1E7008969CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634B8D1C19D1E1E7008969CB;
+			remoteInfo = TorTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BB8903907064341A6574348 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63032CDF19D21E20008D836A /* TRTRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordTableViewCell.h; sourceTree = "<group>"; };
+		63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewCell.m; sourceTree = "<group>"; };
+		63032CE319D22228008D836A /* TRTTorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTorManager.h; sourceTree = "<group>"; };
+		63032CE419D22228008D836A /* TRTTorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTorManager.m; sourceTree = "<group>"; };
+		634B8D1D19D1E1E8008969CB /* TorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		634B8D2119D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634B8D2219D1E1E8008969CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		634B8D2419D1E1E8008969CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		634B8D2519D1E1E8008969CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		634B8D2D19D1E1E8008969CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		634B8D3019D1E1E8008969CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		634B8D3619D1E1E8008969CB /* TorTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		634B8D3B19D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634B8D3C19D1E1E8008969CB /* TorTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorTestTests.m; sourceTree = "<group>"; };
+		6360A84119D1FB49001E50FC /* TRTDatabaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseModel.h; sourceTree = "<group>"; };
+		6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseModel.m; sourceTree = "<group>"; };
+		6360A84419D1FB68001E50FC /* TRTTestRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTestRecord.h; sourceTree = "<group>"; };
+		6360A84519D1FB68001E50FC /* TRTTestRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTestRecord.m; sourceTree = "<group>"; };
+		63A20A2D19D1FF7C00AE0481 /* TRTDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseManager.h; sourceTree = "<group>"; };
+		63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseManager.m; sourceTree = "<group>"; };
+		63A20A3219D202D900AE0481 /* TRTDatabaseViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseViewManager.h; sourceTree = "<group>"; };
+		63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseViewManager.m; sourceTree = "<group>"; };
+		63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordTableViewController.h; sourceTree = "<group>"; };
+		63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewController.m; sourceTree = "<group>"; };
+		7ADC9D47FA974B52B541641F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		634B8D1A19D1E1E7008969CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B893583269488D963E0425 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3319D1E1E8008969CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63032CDE19D21E08008D836A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63032CDF19D21E20008D836A /* TRTRecordTableViewCell.h */,
+				63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		63032CE219D22213008D836A /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				63032CE319D22228008D836A /* TRTTorManager.h */,
+				63032CE419D22228008D836A /* TRTTorManager.m */,
+			);
+			name = Tor;
+			sourceTree = "<group>";
+		};
+		634B8D1419D1E1E7008969CB = {
+			isa = PBXGroup;
+			children = (
+				634B8D1F19D1E1E8008969CB /* TorTest */,
+				634B8D3919D1E1E8008969CB /* TorTestTests */,
+				634B8D1E19D1E1E8008969CB /* Products */,
+				7ADC9D47FA974B52B541641F /* Pods.xcconfig */,
+				B84FD5EF8B184B9498EEE4C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		634B8D1E19D1E1E8008969CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D1D19D1E1E8008969CB /* TorTest.app */,
+				634B8D3619D1E1E8008969CB /* TorTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634B8D1F19D1E1E8008969CB /* TorTest */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D2419D1E1E8008969CB /* AppDelegate.h */,
+				634B8D2519D1E1E8008969CB /* AppDelegate.m */,
+				63032CE219D22213008D836A /* Tor */,
+				63032CDE19D21E08008D836A /* Views */,
+				63A20A2C19D1FF6900AE0481 /* Storage */,
+				63A20A2B19D1FE2500AE0481 /* ViewController */,
+				6360A84019D1FB10001E50FC /* Model */,
+				634B8D2D19D1E1E8008969CB /* Images.xcassets */,
+				634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */,
+				634B8D2019D1E1E8008969CB /* Supporting Files */,
+			);
+			path = TorTest;
+			sourceTree = "<group>";
+		};
+		634B8D2019D1E1E8008969CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D2119D1E1E8008969CB /* Info.plist */,
+				634B8D2219D1E1E8008969CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		634B8D3919D1E1E8008969CB /* TorTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D3C19D1E1E8008969CB /* TorTestTests.m */,
+				634B8D3A19D1E1E8008969CB /* Supporting Files */,
+			);
+			path = TorTestTests;
+			sourceTree = "<group>";
+		};
+		634B8D3A19D1E1E8008969CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D3B19D1E1E8008969CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6360A84019D1FB10001E50FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6360A84119D1FB49001E50FC /* TRTDatabaseModel.h */,
+				6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */,
+				6360A84419D1FB68001E50FC /* TRTTestRecord.h */,
+				6360A84519D1FB68001E50FC /* TRTTestRecord.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63A20A2B19D1FE2500AE0481 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */,
+				63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		63A20A2C19D1FF6900AE0481 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				63A20A2D19D1FF7C00AE0481 /* TRTDatabaseManager.h */,
+				63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */,
+				63A20A3219D202D900AE0481 /* TRTDatabaseViewManager.h */,
+				63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		B84FD5EF8B184B9498EEE4C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB8903907064341A6574348 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		634B8D1C19D1E1E7008969CB /* TorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634B8D4019D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTest" */;
+			buildPhases = (
+				32527C960F3E4FBA90F47890 /* Check Pods Manifest.lock */,
+				634B8D1919D1E1E7008969CB /* Sources */,
+				634B8D1A19D1E1E7008969CB /* Frameworks */,
+				634B8D1B19D1E1E7008969CB /* Resources */,
+				E43B268A25E149ACA5AC8F62 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorTest;
+			productName = TorTest;
+			productReference = 634B8D1D19D1E1E8008969CB /* TorTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		634B8D3519D1E1E8008969CB /* TorTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634B8D4319D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTestTests" */;
+			buildPhases = (
+				634B8D3219D1E1E8008969CB /* Sources */,
+				634B8D3319D1E1E8008969CB /* Frameworks */,
+				634B8D3419D1E1E8008969CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634B8D3819D1E1E8008969CB /* PBXTargetDependency */,
+			);
+			name = TorTestTests;
+			productName = TorTestTests;
+			productReference = 634B8D3619D1E1E8008969CB /* TorTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		634B8D1519D1E1E7008969CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "David Chiles";
+				TargetAttributes = {
+					634B8D1C19D1E1E7008969CB = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					634B8D3519D1E1E8008969CB = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 634B8D1C19D1E1E7008969CB;
+					};
+				};
+			};
+			buildConfigurationList = 634B8D1819D1E1E7008969CB /* Build configuration list for PBXProject "TorTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 634B8D1419D1E1E7008969CB;
+			productRefGroup = 634B8D1E19D1E1E8008969CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				634B8D1C19D1E1E7008969CB /* TorTest */,
+				634B8D3519D1E1E8008969CB /* TorTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		634B8D1B19D1E1E7008969CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B8D3119D1E1E8008969CB /* LaunchScreen.xib in Resources */,
+				634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3419D1E1E8008969CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32527C960F3E4FBA90F47890 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E43B268A25E149ACA5AC8F62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		634B8D1919D1E1E7008969CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */,
+				6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */,
+				63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */,
+				634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */,
+				634B8D2319D1E1E8008969CB /* main.m in Sources */,
+				63032CE519D22228008D836A /* TRTTorManager.m in Sources */,
+				6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */,
+				63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */,
+				63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3219D1E1E8008969CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B8D3D19D1E1E8008969CB /* TorTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		634B8D3819D1E1E8008969CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634B8D1C19D1E1E7008969CB /* TorTest */;
+			targetProxy = 634B8D3719D1E1E8008969CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				634B8D3019D1E1E8008969CB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		634B8D3E19D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		634B8D3F19D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		634B8D4119D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADC9D47FA974B52B541641F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		634B8D4219D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADC9D47FA974B52B541641F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		634B8D4419D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest";
+			};
+			name = Debug;
+		};
+		634B8D4519D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		634B8D1819D1E1E7008969CB /* Build configuration list for PBXProject "TorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D3E19D1E1E8008969CB /* Debug */,
+				634B8D3F19D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634B8D4019D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D4119D1E1E8008969CB /* Debug */,
+				634B8D4219D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634B8D4319D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D4419D1E1E8008969CB /* Debug */,
+				634B8D4519D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 634B8D1519D1E1E7008969CB /* Project object */;
+}

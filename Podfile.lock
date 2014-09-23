@@ -1,0 +1,37 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Mantle (1.5):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.5)
+  - OnionKit (1.0.0)
+  - PureLayout (1.1.0)
+  - YapDatabase (2.5.2):
+    - YapDatabase/standard
+  - YapDatabase/common (2.5.2):
+    - CocoaLumberjack (~> 1)
+  - YapDatabase/standard (2.5.2):
+    - YapDatabase/common
+
+DEPENDENCIES:
+  - Mantle (~> 1.5)
+  - OnionKit (from `https://github.com/ChatSecure/OnionKit.git`)
+  - PureLayout (~> 1.1)
+  - YapDatabase (~> 2.5)
+
+EXTERNAL SOURCES:
+  OnionKit:
+    :git: https://github.com/ChatSecure/OnionKit.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
+  Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
+  OnionKit: 679881831ede86ceab124475322076d45e3708b6
+  PureLayout: c8960fa0f3b40d849d5e177d699d0148faa63b63
+  YapDatabase: 50f763e49374c38025e8255b4c468d26d81b1048
+
+COCOAPODS: 0.33.1
