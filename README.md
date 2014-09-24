@@ -11,4 +11,4 @@ This is simple app for testing background fetch and TOR. The app opens up in the
 `pod install`
 
 ## Running
-For this to work it has to be run on device. In order to manually trigger a backgrou fetch go to Debug → Simulate Background Fetch. That should create a new record.
+For this to work it has to be run on device. In order to manually trigger a background fetch go to Debug → Simulate Background Fetch. That should create a new record.
