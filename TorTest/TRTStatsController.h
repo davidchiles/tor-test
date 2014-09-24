@@ -11,6 +11,7 @@
 @interface TRTStatsController : UIViewController
 
 @property (nonatomic, readonly) NSUInteger numberOfRecords;
+@property (nonatomic, readonly) double percentageSuccesfulRecords;
 @property (nonatomic, readonly) NSUInteger numberWifi;
 @property (nonatomic, readonly) NSUInteger numberWWan;
 @property (nonatomic, readonly) NSUInteger numberNoConnection;

@@ -17,6 +17,8 @@
 #import "YapDatabaseTransaction.h"
 #import "YapDatabaseViewTransaction.h"
 #import "TRTStatsViewController.h"
+#import "NSDateFormatter+TorTest.h"
+#import "TRTRecordViewController.h"
 
 @interface TRTRecordTableViewController ()
 
@@ -60,7 +62,7 @@
     ////// Nav Bar //////
     
     UIBarButtonItem *statsBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@"Stats" style:UIBarButtonItemStylePlain target:self action:@selector(statsButtonPressed:)];
-    self.navigationItem.rightBarButtonItem = statsBarButtonItem;
+    self.navigationItem.leftBarButtonItem = statsBarButtonItem;
     
     ////// TableView //////
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -76,10 +78,7 @@
 - (NSDateFormatter *)dateFormatter
 {
     if (!_dateFormatter) {
-        _dateFormatter = [[NSDateFormatter alloc] init];
-        _dateFormatter.dateStyle = NSDateFormatterMediumStyle;
-        _dateFormatter.timeStyle = NSDateFormatterMediumStyle;
-        
+        _dateFormatter = [NSDateFormatter trt_defaultDateFormatter];
     }
     return _dateFormatter;
 }
@@ -148,6 +147,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    TRTTestRecord *record = [self recordForIndexPath:indexPath];
+    TRTRecordViewController *viewController = [[TRTRecordViewController alloc] initWithRecord:record];
+    [self.navigationController pushViewController:viewController animated:YES];
     
 }
 

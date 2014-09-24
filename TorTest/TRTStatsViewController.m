@@ -43,6 +43,8 @@
     
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Number Of Records"
                                                                      valueString:[NSString stringWithFormat:@"%ld",self.statsController.numberOfRecords]]];
+    [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Percent Successful"
+                                                                     valueString:[NSString stringWithFormat:@"%1.2f%%",self.statsController.percentageSuccesfulRecords * 100]]];
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Wifi"
                                                            valueString:[NSString stringWithFormat:@"%ld",self.statsController.numberWifi]]];
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Cell"

@@ -15,6 +15,7 @@
 @interface TRTStatsController ()
 
 @property (nonatomic) NSUInteger numberOfRecords;
+@property (nonatomic) double percentageSuccesfulRecords;
 @property (nonatomic) NSUInteger numberWifi;
 @property (nonatomic) NSUInteger numberWWan;
 @property (nonatomic) NSUInteger numberNoConnection;
@@ -33,6 +34,7 @@
 {
     
     __block NSUInteger tempNumberOfRecords = 0;
+    __block NSUInteger numberOfSuccessfulRecords = 0;
     __block NSUInteger tempNumberWifi = 0;
     __block NSUInteger tempNumberWWan = 0;
     __block NSUInteger tempNumberNoConnection = 0;
@@ -60,6 +62,10 @@
                         break;
                 }
                 
+                if (record.backgroundLaunchEndDate) {
+                    numberOfSuccessfulRecords++;
+                }
+                
                 totalBackgroundTime += [record launchTime];
                 totalTorConnectionTime += [record torConnectionTime];
                 totalUrlRequestTime += [record urlFetchTime];
@@ -74,11 +80,12 @@
         self.numberWWan = tempNumberWWan;
         self.numberNoConnection = tempNumberNoConnection;
         
-        if (self.numberOfRecords > 0) {
-            self.averageBackgroundTime = totalBackgroundTime/self.numberOfRecords;
-            self.averageTorConnectionTime = totalTorConnectionTime/self.numberOfRecords;
-            self.averageURLRequestTime = totalUrlRequestTime/self.numberOfRecords;
-            self.averageNumberOfBytes = totalNumberOfBytes/self.numberOfRecords;
+        if (numberOfSuccessfulRecords > 0) {
+            self.averageBackgroundTime = totalBackgroundTime/numberOfSuccessfulRecords;
+            self.averageTorConnectionTime = totalTorConnectionTime/numberOfSuccessfulRecords;
+            self.averageURLRequestTime = totalUrlRequestTime/numberOfSuccessfulRecords;
+            self.averageNumberOfBytes = totalNumberOfBytes/numberOfSuccessfulRecords;
+            self.percentageSuccesfulRecords = (double)numberOfSuccessfulRecords / (double)self.numberOfRecords;
         }
         else {
             self.averageBackgroundTime = 0;

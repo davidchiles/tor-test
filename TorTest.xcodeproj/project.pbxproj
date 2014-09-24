@@ -13,6 +13,7 @@
 		6310DB8019D34F240075F853 /* TRTStatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB7F19D34F240075F853 /* TRTStatsController.m */; };
 		6310DB8319D359580075F853 /* TRTLabelValueViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */; };
 		6310DB8619D35A380075F853 /* TRTRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8519D35A380075F853 /* TRTRecordViewController.m */; };
+		6310DB8919D35C3B0075F853 /* NSDateFormatter+TorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */; };
 		634B8D2319D1E1E8008969CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2219D1E1E8008969CB /* main.m */; };
 		634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2519D1E1E8008969CB /* AppDelegate.m */; };
 		634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2D19D1E1E8008969CB /* Images.xcassets */; };
@@ -52,6 +53,8 @@
 		6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTLabelValueViewObject.m; sourceTree = "<group>"; };
 		6310DB8419D35A380075F853 /* TRTRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordViewController.h; sourceTree = "<group>"; };
 		6310DB8519D35A380075F853 /* TRTRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordViewController.m; sourceTree = "<group>"; };
+		6310DB8719D35C3B0075F853 /* NSDateFormatter+TorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TorTest.h"; sourceTree = "<group>"; };
+		6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TorTest.m"; sourceTree = "<group>"; };
 		634B8D1D19D1E1E8008969CB /* TorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634B8D2119D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634B8D2219D1E1E8008969CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		6310DB8A19D361870075F853 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6310DB8719D35C3B0075F853 /* NSDateFormatter+TorTest.h */,
+				6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		634B8D1419D1E1E7008969CB = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +166,7 @@
 			children = (
 				634B8D2419D1E1E8008969CB /* AppDelegate.h */,
 				634B8D2519D1E1E8008969CB /* AppDelegate.m */,
+				6310DB8A19D361870075F853 /* Categories */,
 				6310DB7D19D34F170075F853 /* Controllers */,
 				63032CE219D22213008D836A /* Tor */,
 				63032CDE19D21E08008D836A /* Views */,
@@ -384,6 +397,7 @@
 				634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */,
 				634B8D2319D1E1E8008969CB /* main.m in Sources */,
 				63032CE519D22228008D836A /* TRTTorManager.m in Sources */,
+				6310DB8919D35C3B0075F853 /* NSDateFormatter+TorTest.m in Sources */,
 				6310DB7C19D34EF70075F853 /* TRTStatsViewController.m in Sources */,
 				63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */,
 				6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */,
