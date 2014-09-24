@@ -7,6 +7,7 @@
 //
 
 #import "TRTDatabaseModel.h"
+#import "Reachability.h"
 
 @interface TRTTestRecord : TRTDatabaseModel
 
@@ -17,7 +18,7 @@
 @property (nonatomic, strong) NSDate *urlStartDate;
 @property (nonatomic, strong) NSDate *urlEndDate;
 @property (nonatomic, strong) NSNumber *numberOfBytes;
-@property (nonatomic, strong) id networkType;
+@property (nonatomic) NetworkStatus networkType;
 
 - (NSTimeInterval)launchTime;
 - (NSTimeInterval)torConnectionTime;

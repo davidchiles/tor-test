@@ -16,6 +16,7 @@
 #import "TRTTestRecord.h"
 #import "YapDatabaseTransaction.h"
 #import "YapDatabaseViewTransaction.h"
+#import "TRTStatsViewController.h"
 
 @interface TRTRecordTableViewController ()
 
@@ -23,6 +24,7 @@
 @property (nonatomic, strong) YapDatabaseViewMappings *tableViewMappings;
 @property (nonatomic, strong) YapDatabaseConnection *databaseConnection;
 @property (nonatomic, weak) id<NSObject> databaseObserver;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 @property (nonatomic) BOOL addedConstraints;
 
@@ -55,6 +57,10 @@
         [welf yapDatabaseModified:note];
     }];
     
+    ////// Nav Bar //////
+    
+    UIBarButtonItem *statsBarButtonItem =  [[UIBarButtonItem alloc] initWithTitle:@"Stats" style:UIBarButtonItemStylePlain target:self action:@selector(statsButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = statsBarButtonItem;
     
     ////// TableView //////
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -67,6 +73,17 @@
     [self.view addSubview:self.tableView];
 }
 
+- (NSDateFormatter *)dateFormatter
+{
+    if (!_dateFormatter) {
+        _dateFormatter = [[NSDateFormatter alloc] init];
+        _dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+        _dateFormatter.timeStyle = NSDateFormatterMediumStyle;
+        
+    }
+    return _dateFormatter;
+}
+
 - (void)updateViewConstraints
 {
     if (!self.addedConstraints) {
@@ -75,6 +92,12 @@
         self.addedConstraints = YES;
     }
     [super updateViewConstraints];
+}
+
+- (void)statsButtonPressed:(id)sender
+{
+    TRTStatsViewController *viewController = [[TRTStatsViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (TRTTestRecord *)recordForIndexPath:(NSIndexPath *)indexPath
@@ -100,8 +123,14 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     TRTTestRecord *record = [self recordForIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",record.backgroundLaunchStartDate];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",record.backgroundLaunchEndDate];
+    NSString *dateString = [self.dateFormatter stringFromDate:record.backgroundLaunchStartDate];
+    cell.textLabel.text = dateString;
+    if (record.backgroundLaunchEndDate) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     return cell;
 }
 

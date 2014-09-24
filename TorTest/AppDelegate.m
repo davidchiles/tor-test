@@ -10,7 +10,7 @@
 #import "TRTDatabaseManager.h"
 #import "TRTDatabaseViewManager.h"
 #import "TRTRecordTableViewController.h"
-#import "TRTTorManager.h"
+#import "TRTBackgroundManager.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +24,12 @@
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     
     NSLog(@"Launched in background %d", UIApplicationStateBackground == application.applicationState);
+    if (UIApplicationStateBackground == application.applicationState) {
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.alertBody = @"Background Launch";
+        notification.alertAction = @"OK";
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    }
     
     TRTDatabaseManager *databaseManager = [TRTDatabaseManager sharedInstance];
     NSString *databaseName = @"TorTest.sqlite";
@@ -64,12 +70,7 @@
 
 - (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    TRTTorManager *torManager = [TRTTorManager sharedInstance];
-    [torManager startTorWithCompletion:^(NSError *error) {
-        if (completionHandler) {
-            completionHandler(UIBackgroundFetchResultNewData);
-        }
-    }];
+    [[TRTBackgroundManager new] backgroundFetchWithCompletion:completionHandler];
 }
 
 @end

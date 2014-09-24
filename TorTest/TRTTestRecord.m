@@ -12,17 +12,17 @@
 
 - (NSTimeInterval)launchTime
 {
-    return [self.backgroundLaunchEndDate timeIntervalSinceDate:self.backgroundLaunchStartDate];
+    return MAX([self.backgroundLaunchEndDate timeIntervalSinceDate:self.backgroundLaunchStartDate], 0);
 }
 
 - (NSTimeInterval)torConnectionTime
 {
-    return [self.torConnectionDate timeIntervalSinceDate:self.torStartDate];
+    return MAX([self.torConnectionDate timeIntervalSinceDate:self.torStartDate], 0);
 }
 
 - (NSTimeInterval)urlFetchTime
 {
-    return [self.urlEndDate timeIntervalSinceDate:self.urlStartDate];
+    return MAX([self.urlEndDate timeIntervalSinceDate:self.urlStartDate], 0);
 }
 
 @end

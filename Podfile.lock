@@ -9,6 +9,7 @@ PODS:
   - Mantle/extobjc (1.5)
   - OnionKit (1.0.0)
   - PureLayout (1.1.0)
+  - Reachability (3.1.1)
   - YapDatabase (2.5.2):
     - YapDatabase/standard
   - YapDatabase/common (2.5.2):
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - Mantle (~> 1.5)
   - OnionKit (from `https://github.com/ChatSecure/OnionKit.git`)
   - PureLayout (~> 1.1)
+  - Reachability (~> 3.1)
   - YapDatabase (~> 2.5)
 
 EXTERNAL SOURCES:
@@ -32,6 +34,7 @@ SPEC CHECKSUMS:
   Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
   OnionKit: 679881831ede86ceab124475322076d45e3708b6
   PureLayout: c8960fa0f3b40d849d5e177d699d0148faa63b63
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
   YapDatabase: 50f763e49374c38025e8255b4c468d26d81b1048
 
 COCOAPODS: 0.33.1

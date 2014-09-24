@@ -7,4 +7,5 @@ pod 'YapDatabase', '~> 2.5'
 pod 'OnionKit', :git => 'https://github.com/ChatSecure/OnionKit.git', :submodules => true
 pod 'Mantle', '~> 1.5'
 pod 'PureLayout', '~> 1.1'
+pod 'Reachability', '~> 3.1'
 

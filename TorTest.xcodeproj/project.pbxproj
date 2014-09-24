@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */; };
 		63032CE519D22228008D836A /* TRTTorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE419D22228008D836A /* TRTTorManager.m */; };
+		6310DB7C19D34EF70075F853 /* TRTStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */; };
+		6310DB8019D34F240075F853 /* TRTStatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB7F19D34F240075F853 /* TRTStatsController.m */; };
+		6310DB8319D359580075F853 /* TRTLabelValueViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */; };
+		6310DB8619D35A380075F853 /* TRTRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8519D35A380075F853 /* TRTRecordViewController.m */; };
 		634B8D2319D1E1E8008969CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2219D1E1E8008969CB /* main.m */; };
 		634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2519D1E1E8008969CB /* AppDelegate.m */; };
 		634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2D19D1E1E8008969CB /* Images.xcassets */; };
@@ -19,6 +23,8 @@
 		63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */; };
 		63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */; };
 		63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */; };
+		63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5261019D22F7300E21816 /* TRTBackgroundManager.m */; };
+		63E5261419D2380E00E21816 /* TRTTorProxyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */; };
 		76B893583269488D963E0425 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8903907064341A6574348 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +44,14 @@
 		63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewCell.m; sourceTree = "<group>"; };
 		63032CE319D22228008D836A /* TRTTorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTorManager.h; sourceTree = "<group>"; };
 		63032CE419D22228008D836A /* TRTTorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTorManager.m; sourceTree = "<group>"; };
+		6310DB7A19D34EF70075F853 /* TRTStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTStatsViewController.h; sourceTree = "<group>"; };
+		6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTStatsViewController.m; sourceTree = "<group>"; };
+		6310DB7E19D34F240075F853 /* TRTStatsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTStatsController.h; sourceTree = "<group>"; };
+		6310DB7F19D34F240075F853 /* TRTStatsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTStatsController.m; sourceTree = "<group>"; };
+		6310DB8119D359580075F853 /* TRTLabelValueViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTLabelValueViewObject.h; sourceTree = "<group>"; };
+		6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTLabelValueViewObject.m; sourceTree = "<group>"; };
+		6310DB8419D35A380075F853 /* TRTRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordViewController.h; sourceTree = "<group>"; };
+		6310DB8519D35A380075F853 /* TRTRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordViewController.m; sourceTree = "<group>"; };
 		634B8D1D19D1E1E8008969CB /* TorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634B8D2119D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		634B8D2219D1E1E8008969CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +72,10 @@
 		63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseViewManager.m; sourceTree = "<group>"; };
 		63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordTableViewController.h; sourceTree = "<group>"; };
 		63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewController.m; sourceTree = "<group>"; };
+		63E5260F19D22F7300E21816 /* TRTBackgroundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTBackgroundManager.h; sourceTree = "<group>"; };
+		63E5261019D22F7300E21816 /* TRTBackgroundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTBackgroundManager.m; sourceTree = "<group>"; };
+		63E5261219D2380E00E21816 /* TRTTorProxyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTorProxyURLProtocol.h; sourceTree = "<group>"; };
+		63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTorProxyURLProtocol.m; sourceTree = "<group>"; };
 		7ADC9D47FA974B52B541641F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,8 +112,21 @@
 			children = (
 				63032CE319D22228008D836A /* TRTTorManager.h */,
 				63032CE419D22228008D836A /* TRTTorManager.m */,
+				63E5261219D2380E00E21816 /* TRTTorProxyURLProtocol.h */,
+				63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */,
 			);
 			name = Tor;
+			sourceTree = "<group>";
+		};
+		6310DB7D19D34F170075F853 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63E5260F19D22F7300E21816 /* TRTBackgroundManager.h */,
+				63E5261019D22F7300E21816 /* TRTBackgroundManager.m */,
+				6310DB7E19D34F240075F853 /* TRTStatsController.h */,
+				6310DB7F19D34F240075F853 /* TRTStatsController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		634B8D1419D1E1E7008969CB = {
@@ -123,6 +154,7 @@
 			children = (
 				634B8D2419D1E1E8008969CB /* AppDelegate.h */,
 				634B8D2519D1E1E8008969CB /* AppDelegate.m */,
+				6310DB7D19D34F170075F853 /* Controllers */,
 				63032CE219D22213008D836A /* Tor */,
 				63032CDE19D21E08008D836A /* Views */,
 				63A20A2C19D1FF6900AE0481 /* Storage */,
@@ -168,6 +200,8 @@
 				6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */,
 				6360A84419D1FB68001E50FC /* TRTTestRecord.h */,
 				6360A84519D1FB68001E50FC /* TRTTestRecord.m */,
+				6310DB8119D359580075F853 /* TRTLabelValueViewObject.h */,
+				6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +211,10 @@
 			children = (
 				63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */,
 				63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */,
+				6310DB7A19D34EF70075F853 /* TRTStatsViewController.h */,
+				6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */,
+				6310DB8419D35A380075F853 /* TRTRecordViewController.h */,
+				6310DB8519D35A380075F853 /* TRTRecordViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -339,15 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E5261419D2380E00E21816 /* TRTTorProxyURLProtocol.m in Sources */,
 				63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */,
 				6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */,
 				63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */,
 				634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */,
 				634B8D2319D1E1E8008969CB /* main.m in Sources */,
 				63032CE519D22228008D836A /* TRTTorManager.m in Sources */,
+				6310DB7C19D34EF70075F853 /* TRTStatsViewController.m in Sources */,
+				63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */,
 				6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */,
+				6310DB8019D34F240075F853 /* TRTStatsController.m in Sources */,
+				6310DB8319D359580075F853 /* TRTLabelValueViewObject.m in Sources */,
 				63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */,
 				63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */,
+				6310DB8619D35A380075F853 /* TRTRecordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
