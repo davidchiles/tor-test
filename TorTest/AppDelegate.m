@@ -20,16 +20,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
-    
-    NSLog(@"Launched in background %d", UIApplicationStateBackground == application.applicationState);
-    if (UIApplicationStateBackground == application.applicationState) {
-        UILocalNotification *notification = [[UILocalNotification alloc] init];
-        notification.alertBody = @"Background Launch";
-        notification.alertAction = @"OK";
-        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-    }
     
     TRTDatabaseManager *databaseManager = [TRTDatabaseManager sharedInstance];
     NSString *databaseName = @"TorTest.sqlite";

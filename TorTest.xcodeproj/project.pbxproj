@@ -25,7 +25,6 @@
 		63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */; };
 		63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */; };
 		63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5261019D22F7300E21816 /* TRTBackgroundManager.m */; };
-		63E5261419D2380E00E21816 /* TRTTorProxyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */; };
 		76B893583269488D963E0425 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8903907064341A6574348 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +76,6 @@
 		63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewController.m; sourceTree = "<group>"; };
 		63E5260F19D22F7300E21816 /* TRTBackgroundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTBackgroundManager.h; sourceTree = "<group>"; };
 		63E5261019D22F7300E21816 /* TRTBackgroundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTBackgroundManager.m; sourceTree = "<group>"; };
-		63E5261219D2380E00E21816 /* TRTTorProxyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTorProxyURLProtocol.h; sourceTree = "<group>"; };
-		63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTorProxyURLProtocol.m; sourceTree = "<group>"; };
 		7ADC9D47FA974B52B541641F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +112,6 @@
 			children = (
 				63032CE319D22228008D836A /* TRTTorManager.h */,
 				63032CE419D22228008D836A /* TRTTorManager.m */,
-				63E5261219D2380E00E21816 /* TRTTorProxyURLProtocol.h */,
-				63E5261319D2380E00E21816 /* TRTTorProxyURLProtocol.m */,
 			);
 			name = Tor;
 			sourceTree = "<group>";
@@ -390,7 +385,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E5261419D2380E00E21816 /* TRTTorProxyURLProtocol.m in Sources */,
 				63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */,
 				6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */,
 				63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */,

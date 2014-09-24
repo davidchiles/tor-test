@@ -48,12 +48,6 @@
         [self.tableViewMappings updateWithTransaction:transaction];
     }];
     
-    [self.databaseConnection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
-        [transaction enumerateKeysAndObjectsInAllCollectionsUsingBlock:^(NSString *collection, NSString *key, id object, BOOL *stop) {
-            NSLog(@"%@ %@",collection,key);
-        }];
-    }];
-    
     __weak TRTRecordTableViewController *welf = self;
     self.databaseObserver = [[NSNotificationCenter defaultCenter] addObserverForName:TRTUIDatabaseConnectionDidUpdateNotification object:[TRTDatabaseManager sharedInstance].database queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
         [welf yapDatabaseModified:note];

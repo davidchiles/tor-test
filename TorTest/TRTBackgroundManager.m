@@ -16,13 +16,7 @@
 @implementation TRTBackgroundManager
 
 - (void)backgroundFetchWithCompletion:(void (^)(UIBackgroundFetchResult result))completionHandler
-{
-    UILocalNotification *notification = [[UILocalNotification alloc] init];
-    notification.alertBody = @"Background Fetch Started";
-    notification.alertAction = @"OK";
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-    
-    
+{    
     TRTTorManager *torManager = [TRTTorManager sharedInstance];
     TRTTestRecord *record = [[TRTTestRecord alloc] init];
     record.backgroundLaunchStartDate = [NSDate date];
@@ -43,10 +37,19 @@
             NetworkStatus status = [reachability currentReachabilityStatus];
             record.networkType = status;
             
-            NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
-            NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+            // Create a NSURLSessionConfiguration that uses the newly setup SOCKS proxy
+            NSDictionary *proxyDict = @{
+                                        (NSString *)kCFStreamPropertySOCKSProxyHost : @"127.0.0.1",
+                                        (NSString *)kCFStreamPropertySOCKSProxyPort : @(9050)
+                                        };
+            NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+            configuration.connectionProxyDictionary = proxyDict;
             
-            NSURL *url = [[NSURL alloc] initWithString:@"http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"];
+            NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+            
+            //NSURL *url = [NSURL URLWithString:@"https://check.torproject.org/"];
+            //duckduckgo NSURL *url = [NSURL URLWithString:@"http://3g2upl4pq6kufc4m.onion/"];
+            NSURL *url = [NSURL URLWithString:@"http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"];
             
             record.urlStartDate = [NSDate date];
             [[TRTDatabaseManager sharedInstance].readWriteConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
