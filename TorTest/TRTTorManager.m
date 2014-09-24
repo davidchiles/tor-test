@@ -39,6 +39,16 @@
     return [OnionKit sharedInstance].isRunning;
 }
 
+- (NSString *)hostname
+{
+    return @"127.0.0.1";
+}
+
+- (NSNumber *)port
+{
+    return @([OnionKit sharedInstance].port);
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if ([keyPath isEqualToString:NSStringFromSelector(@selector(isRunning))] && [object isEqual:[OnionKit sharedInstance]]) {

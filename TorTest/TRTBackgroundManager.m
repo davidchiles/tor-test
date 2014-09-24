@@ -39,8 +39,8 @@
             
             // Create a NSURLSessionConfiguration that uses the newly setup SOCKS proxy
             NSDictionary *proxyDict = @{
-                                        (NSString *)kCFStreamPropertySOCKSProxyHost : @"127.0.0.1",
-                                        (NSString *)kCFStreamPropertySOCKSProxyPort : @(9050)
+                                        (NSString *)kCFStreamPropertySOCKSProxyHost : [TRTTorManager sharedInstance].hostname,
+                                        (NSString *)kCFStreamPropertySOCKSProxyPort : [TRTTorManager sharedInstance].port
                                         };
             NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
             configuration.connectionProxyDictionary = proxyDict;

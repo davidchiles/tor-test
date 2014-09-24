@@ -13,6 +13,9 @@
 - (void)startTorWithCompletion:(void (^)(NSError *error))completion;
 - (BOOL)isTorRunning;
 
+- (NSString *)hostname;
+- (NSNumber *)port;
+
 + (instancetype)sharedInstance;
 
 @end
