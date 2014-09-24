@@ -55,6 +55,8 @@
                                                            valueString:[NSString stringWithFormat:@"%1.2f s",self.statsController.averageBackgroundTime]]];
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Average Tor Connection Time"
                                                            valueString:[NSString stringWithFormat:@"%1.2f s",self.statsController.averageTorConnectionTime]]];
+    [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Average URL Request Time"
+                                                                     valueString:[NSString stringWithFormat:@"%1.2f s",self.statsController.averageURLRequestTime]]];
     
     
     self.dataArray = tempArray;

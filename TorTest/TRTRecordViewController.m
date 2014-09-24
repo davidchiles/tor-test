@@ -73,6 +73,13 @@
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Tor Connection Time"
                                                                      valueString:[NSString stringWithFormat:@"%1.2f s",[self.testRecord torConnectionTime]]]];
     
+    [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"URL Start"
+                                                                     valueString:[self.dateFormatter stringFromDate:self.testRecord.urlStartDate]]];
+    [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"URL Finish"
+                                                                     valueString:[self.dateFormatter stringFromDate:self.testRecord.urlEndDate]]];
+    [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"URL Request Time"
+                                                                     valueString:[NSString stringWithFormat:@"%1.2f s",[self.testRecord urlFetchTime]]]];
+    
     
     [tempArray addObject:[TRTLabelValueViewObject labelViewObjectWithLabelString:@"Bytes"
                                                                      valueString:[NSString stringWithFormat:@"%@",self.testRecord.numberOfBytes]]];

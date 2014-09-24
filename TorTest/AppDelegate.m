@@ -11,6 +11,7 @@
 #import "TRTDatabaseViewManager.h"
 #import "TRTRecordTableViewController.h"
 #import "TRTBackgroundManager.h"
+#import "TRTTorManager.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+    
+    [[TRTTorManager sharedInstance] startTorWithCompletion:nil];
     
     TRTDatabaseManager *databaseManager = [TRTDatabaseManager sharedInstance];
     NSString *databaseName = @"TorTest.sqlite";
