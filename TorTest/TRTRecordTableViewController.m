@@ -19,6 +19,7 @@
 #import "TRTStatsViewController.h"
 #import "NSDateFormatter+TorTest.h"
 #import "TRTRecordViewController.h"
+#import "YapDatabase.h"
 
 @interface TRTRecordTableViewController ()
 
@@ -41,17 +42,13 @@
     self.title = @"Records";
     
     ////// Database //////
-    self.databaseConnection = [TRTDatabaseManager sharedInstance].mainThreadReadOnlyConnection;
+    self.databaseConnection = [[TRTDatabaseManager sharedInstance].database newConnection];
     self.tableViewMappings = [[YapDatabaseViewMappings alloc] initWithGroups:@[TRTAllRecordsGroupName] view:TRTAllRecordsViewName];
     [self.databaseConnection beginLongLivedReadTransaction];
     [self.databaseConnection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
         [self.tableViewMappings updateWithTransaction:transaction];
     }];
     
-    __weak TRTRecordTableViewController *welf = self;
-    self.databaseObserver = [[NSNotificationCenter defaultCenter] addObserverForName:TRTUIDatabaseConnectionDidUpdateNotification object:[TRTDatabaseManager sharedInstance].database queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
-        [welf yapDatabaseModified:note];
-    }];
     
     ////// Nav Bar //////
     
@@ -67,14 +64,13 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [self.view addSubview:self.tableView];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear: animated];
-    [self.databaseConnection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
-        [self.tableViewMappings updateWithTransaction:transaction];
+    
+    __weak typeof(self)weakSelf = self;
+    self.databaseObserver = [[NSNotificationCenter defaultCenter] addObserverForName:YapDatabaseModifiedNotification object:[TRTDatabaseManager sharedInstance].database queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
+        __strong typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf yapDatabaseModified:note];
     }];
+
 }
 
 - (NSDateFormatter *)dateFormatter
@@ -160,7 +156,7 @@
 
 - (void)yapDatabaseModified:(NSNotification *)notification
 {
-    NSArray *notifications = notification.userInfo[@"notifications"];
+    NSArray *notifications = [self.databaseConnection beginLongLivedReadTransaction];
     if ([notifications count]) {
         NSArray *sectionChanges = nil;
         NSArray *rowChanges = nil;

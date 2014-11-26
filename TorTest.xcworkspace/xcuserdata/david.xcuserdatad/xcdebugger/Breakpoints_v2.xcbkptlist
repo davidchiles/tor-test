@@ -19,22 +19,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TorTest/TRTRecordTableViewController.m"
-            timestampString = "433373875.230155"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "-yapDatabaseModified:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TorTest/AppDelegate.m"
             timestampString = "433806706.526897"
             startingColumnNumber = "9223372036854775807"
@@ -147,13 +131,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TorTest/TRTBackgroundManager.m"
-            timestampString = "433721779.237588"
+            filePath = "TorTest/TRTURLProtocol.m"
+            timestampString = "438732499.981374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "-backgroundFetchWithCompletion:"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-startLoading"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -163,13 +147,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TorTest/AppDelegate.m"
-            timestampString = "433806686.859584"
+            filePath = "TorTest/TRTURLProtocol.m"
+            timestampString = "438732499.981374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-initWithRequest:cachedResponse:client:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorTest/TRTURLProtocol.m"
+            timestampString = "438732462.242001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-initWithTask:cachedResponse:client:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TorTest/TRTRecordTableViewController.m"
+            timestampString = "438736029.038245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

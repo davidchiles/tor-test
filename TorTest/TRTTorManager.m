@@ -47,21 +47,28 @@
 
 - (void)startTorWithCompletion:(void (^)(NSString *,NSUInteger, NSError *))completion
 {
-    [self.torManager setupWithCompletion:^(NSString *socksHost, NSUInteger socksPort, NSError *error) {
-        if (error) {
-            self.hostname = nil;
-            self.port = 0;
-            if (completion) {
-                completion(nil,0,error);
+    if (self.torManager.status != CPAStatusClosed && completion) {
+        completion(self.torManager.SOCKSHost,self.torManager.SOCKSPort,nil);
+    }
+    else {
+        [self.torManager setupWithCompletion:^(NSString *socksHost, NSUInteger socksPort, NSError *error) {
+            if (error) {
+                self.hostname = nil;
+                self.port = 0;
+                if (completion) {
+                    completion(nil,0,error);
+                }
+            } else {
+                self.hostname = socksHost;
+                self.port = socksPort;
+                if (completion) {
+                    completion(socksHost,socksPort,nil);
+                }
             }
-        } else {
-            self.hostname = socksHost;
-            self.port = socksPort;
-            if (completion) {
-                completion(socksHost,socksPort,nil);
-            }
-        }
-    } progress:nil];
+        } progress:nil];
+    }
+    
+    
 }
 
 + (instancetype)sharedInstance
