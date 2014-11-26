@@ -7,61 +7,61 @@
 //
 
 #import "TRTTorManager.h"
-#import "OnionKit.h"
+#import "CPAProxy.h"
 
 @interface TRTTorManager ()
 
-@property (nonatomic, copy) void (^torCompletionBlock)(NSError *error);
-@property (nonatomic, strong) id<NSObject> didStartObserver;
-@property (nonatomic, strong) id<NSObject> didStopObserver;
+@property (nonatomic, strong) NSString *hostname;
+@property (nonatomic) NSUInteger port;
+
+@property (nonatomic, strong) CPAProxyManager *torManager;
 
 @end
 
 @implementation TRTTorManager
 
-- (void)startTorWithCompletion:(void (^)(NSError *))completion
-{
-    if(![self isTorRunning])
-    {
-        self.torCompletionBlock = completion;
+- (instancetype)init {
+    if (self = [super init]) {
         
-        [[OnionKit sharedInstance] addObserver:self forKeyPath:NSStringFromSelector(@selector(isRunning)) options:NSKeyValueObservingOptionNew context:NULL];
-        [[OnionKit sharedInstance] start];
-    }
-    else if (completion){
-        completion(nil);
-    }
-    
-}
-
-- (BOOL)isTorRunning
-{
-    return [OnionKit sharedInstance].isRunning;
-}
-
-- (NSString *)hostname
-{
-    return @"127.0.0.1";
-}
-
-- (NSNumber *)port
-{
-    return @([OnionKit sharedInstance].port);
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:NSStringFromSelector(@selector(isRunning))] && [object isEqual:[OnionKit sharedInstance]]) {
-        BOOL isRunning = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
-        if(self.torCompletionBlock)
-        {
-            NSError *error = nil;
-            if (!isRunning) {
-                error = [NSError errorWithDomain:@"TRTErrorDomain" code:101 userInfo:nil];
-            }
-            self.torCompletionBlock(error);
+        NSURL *cpaProxyBundleURL = [[NSBundle mainBundle] URLForResource:@"CPAProxy" withExtension:@"bundle"];
+        NSBundle *cpaProxyBundle = [NSBundle bundleWithURL:cpaProxyBundleURL];
+        NSString *torrcPath = [cpaProxyBundle pathForResource:@"torrc" ofType:nil];
+        NSString *geoipPath = [cpaProxyBundle pathForResource:@"geoip" ofType:nil];
+        
+        
+        NSString *torDataDirectoryPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"tor"];
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:torDataDirectoryPath]) {
+            
+            [[NSFileManager defaultManager] createDirectoryAtPath:torDataDirectoryPath
+                                      withIntermediateDirectories:YES
+                                                       attributes:nil
+                                                            error:nil];
         }
+        
+        CPAConfiguration *configuration = [CPAConfiguration configurationWithTorrcPath:torrcPath geoipPath:geoipPath torDataDirectoryPath:torDataDirectoryPath];
+        self.torManager = [CPAProxyManager proxyWithConfiguration:configuration];
     }
+    return self;
+}
+
+- (void)startTorWithCompletion:(void (^)(NSString *,NSUInteger, NSError *))completion
+{
+    [self.torManager setupWithCompletion:^(NSString *socksHost, NSUInteger socksPort, NSError *error) {
+        if (error) {
+            self.hostname = nil;
+            self.port = 0;
+            if (completion) {
+                completion(nil,0,error);
+            }
+        } else {
+            self.hostname = socksHost;
+            self.port = socksPort;
+            if (completion) {
+                completion(socksHost,socksPort,nil);
+            }
+        }
+    } progress:nil];
 }
 
 + (instancetype)sharedInstance

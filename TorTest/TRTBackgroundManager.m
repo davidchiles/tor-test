@@ -24,7 +24,8 @@
     [[TRTDatabaseManager sharedInstance].readWriteConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
         [record saveWithTransaction:transaction];
     }];
-    [torManager startTorWithCompletion:^(NSError *error) {
+    
+    [torManager startTorWithCompletion:^(NSString *host, NSUInteger port, NSError *error) {
         record.torConnectionDate = [NSDate date];
         [[TRTDatabaseManager sharedInstance].readWriteConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
             [record saveWithTransaction:transaction];
@@ -39,8 +40,8 @@
             
             // Create a NSURLSessionConfiguration that uses the newly setup SOCKS proxy
             NSDictionary *proxyDict = @{
-                                        (NSString *)kCFStreamPropertySOCKSProxyHost : [TRTTorManager sharedInstance].hostname,
-                                        (NSString *)kCFStreamPropertySOCKSProxyPort : [TRTTorManager sharedInstance].port
+                                        (NSString *)kCFStreamPropertySOCKSProxyHost : host,
+                                        (NSString *)kCFStreamPropertySOCKSProxyPort : @(port)
                                         };
             NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
             configuration.connectionProxyDictionary = proxyDict;
@@ -49,7 +50,7 @@
             
             //NSURL *url = [NSURL URLWithString:@"https://check.torproject.org/"];
             //duckduckgo NSURL *url = [NSURL URLWithString:@"http://3g2upl4pq6kufc4m.onion/"];
-            NSURL *url = [NSURL URLWithString:@"http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"];
+            NSURL *url = [NSURL URLWithString:@"http://www.voanews.com/api/epiqq"];
             
             record.urlStartDate = [NSDate date];
             [[TRTDatabaseManager sharedInstance].readWriteConnection asyncReadWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {

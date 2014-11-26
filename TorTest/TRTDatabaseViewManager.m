@@ -59,15 +59,13 @@ NSString *TRTAllRecordsGroupName = @"TRTAllRecordsGroupName";
     
     YapDatabaseViewOptions *options = [[YapDatabaseViewOptions alloc] init];
     options.isPersistent = YES;
-    options.allowedCollections = [NSSet setWithObject:[TRTTestRecord collection]];
+    options.allowedCollections = [[YapWhitelistBlacklist alloc] initWithWhitelist:[NSSet setWithObject:[TRTTestRecord collection]]];
     
     YapDatabaseView *databaseView =
-    [[YapDatabaseView alloc] initWithGroupingBlock:groupingBlock
-                                 groupingBlockType:groupingBlockType
-                                      sortingBlock:sortingBlock
-                                  sortingBlockType:sortingBlockType
-                                        versionTag:@""
-                                           options:options];
+    [[YapDatabaseView alloc] initWithGrouping:groupingBlock
+                                      sorting:sortingBlock
+                                   versionTag:@"1"
+                                      options:options];
     return [database registerExtension:databaseView withName:TRTAllRecordsViewName];
     
 }

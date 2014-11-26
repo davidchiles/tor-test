@@ -1,40 +1,47 @@
 PODS:
+  - CocoaAsyncSocket (7.3.5)
   - CocoaLumberjack (1.9.2):
-    - CocoaLumberjack/Extensions
+    - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
-  - Mantle (1.5):
-    - Mantle/extobjc
-  - Mantle/extobjc (1.5)
-  - OnionKit (1.0.0)
-  - PureLayout (1.1.0)
-  - Reachability (3.1.1)
-  - YapDatabase (2.5.2):
-    - YapDatabase/standard
-  - YapDatabase/common (2.5.2):
+  - CPAProxy (1.0.0):
+    - CocoaAsyncSocket
+  - Mantle (1.5.1):
+    - Mantle/extobjc (= 1.5.1)
+  - Mantle/extobjc (1.5.1)
+  - PureLayout (2.0.3)
+  - Reachability (3.2)
+  - YapDatabase (2.5.4):
+    - YapDatabase/standard (= 2.5.4)
+  - YapDatabase/common (2.5.4):
     - CocoaLumberjack (~> 1)
-  - YapDatabase/standard (2.5.2):
+  - YapDatabase/standard (2.5.4):
     - YapDatabase/common
 
 DEPENDENCIES:
+  - CPAProxy (from `https://github.com/ursachec/CPAProxy.git`)
   - Mantle (~> 1.5)
-  - OnionKit (from `https://github.com/ChatSecure/OnionKit.git`)
-  - PureLayout (~> 1.1)
+  - PureLayout (~> 2.0)
   - Reachability (~> 3.1)
   - YapDatabase (~> 2.5)
 
 EXTERNAL SOURCES:
-  OnionKit:
-    :git: https://github.com/ChatSecure/OnionKit.git
-    :submodules: true
+  CPAProxy:
+    :git: https://github.com/ursachec/CPAProxy.git
+
+CHECKOUT OPTIONS:
+  CPAProxy:
+    :commit: d02fb127c3942e81c0e1b2632bef62dea44eb9c8
+    :git: https://github.com/ursachec/CPAProxy.git
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
-  Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
-  OnionKit: 679881831ede86ceab124475322076d45e3708b6
-  PureLayout: c8960fa0f3b40d849d5e177d699d0148faa63b63
-  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
-  YapDatabase: 50f763e49374c38025e8255b4c468d26d81b1048
+  CPAProxy: c3df549999514de2c04633d20a79b00daf627ddb
+  Mantle: d7c5ac734579ec751c58fecbf56189853056c58c
+  PureLayout: 9658675ed95dabfcdf5154c0771ec9ed0980b370
+  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  YapDatabase: c1d6912df1b4a160f7373ee7657d360e29bb00fd
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

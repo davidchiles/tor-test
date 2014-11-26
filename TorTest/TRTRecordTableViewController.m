@@ -69,6 +69,14 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear: animated];
+    [self.databaseConnection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+        [self.tableViewMappings updateWithTransaction:transaction];
+    }];
+}
+
 - (NSDateFormatter *)dateFormatter
 {
     if (!_dateFormatter) {

@@ -23,7 +23,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     
-    [[TRTTorManager sharedInstance] startTorWithCompletion:nil];
+    __block NSDate *startDate = [NSDate date];
+    [[TRTTorManager sharedInstance] startTorWithCompletion:^(NSString *host, NSUInteger port, NSError *error) {
+        double seconds = [[NSDate date] timeIntervalSinceDate:startDate];
+        NSLog(@"Start Time: %1.2f",seconds);
+        
+    }];
     
     TRTDatabaseManager *databaseManager = [TRTDatabaseManager sharedInstance];
     NSString *databaseName = @"TorTest.sqlite";

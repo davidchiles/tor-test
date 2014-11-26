@@ -10,11 +10,10 @@
 
 @interface TRTTorManager : NSObject
 
-- (void)startTorWithCompletion:(void (^)(NSError *error))completion;
-- (BOOL)isTorRunning;
+@property (nonatomic, strong, readonly) NSString *hostname;
+@property (nonatomic, readonly) NSUInteger port;
 
-- (NSString *)hostname;
-- (NSNumber *)port;
+- (void)startTorWithCompletion:(void (^)(NSString *host,NSUInteger port,NSError *error))completion;
 
 + (instancetype)sharedInstance;
 
