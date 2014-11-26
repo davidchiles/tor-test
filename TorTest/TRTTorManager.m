@@ -47,6 +47,10 @@
 
 - (void)startTorWithCompletion:(void (^)(NSString *,NSUInteger, NSError *))completion
 {
+    if (self.torManager.status != CPAStatusClosed && completion) {
+        completion(self.torManager.SOCKSHost,self.torManager.SOCKSPort,nil);
+    }
+    
     [self.torManager setupWithCompletion:^(NSString *socksHost, NSUInteger socksPort, NSError *error) {
         if (error) {
             self.hostname = nil;

@@ -12,6 +12,7 @@
 #import "YapDatabaseConnection.h"
 #import "TRTDatabaseManager.h"
 #import "Reachability.h"
+#import "TRTURLProtocol.h"
 
 @implementation TRTBackgroundManager
 
@@ -38,13 +39,16 @@
             NetworkStatus status = [reachability currentReachabilityStatus];
             record.networkType = status;
             
+            /*
             // Create a NSURLSessionConfiguration that uses the newly setup SOCKS proxy
             NSDictionary *proxyDict = @{
                                         (NSString *)kCFStreamPropertySOCKSProxyHost : host,
                                         (NSString *)kCFStreamPropertySOCKSProxyPort : @(port)
                                         };
+            */
             NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
-            configuration.connectionProxyDictionary = proxyDict;
+            //configuration.connectionProxyDictionary = proxyDict;
+            configuration.protocolClasses = @[[TRTURLProtocol class]];
             
             NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
             

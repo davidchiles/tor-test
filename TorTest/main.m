@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+#import "TRTURLProtocol.h"
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        [NSURLProtocol registerClass:[TRTURLProtocol class]];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

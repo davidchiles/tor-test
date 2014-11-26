@@ -1,1459 +1,625 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0BB8903907064341A6574348</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>14B89760B6867332888FF601</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AEF688A157A52E3D7546FAED</string>
-				<string>B752611DF30AC5CB3E7E0170</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>32527C960F3E4FBA90F47890</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>63032CDE19D21E08008D836A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63032CDF19D21E20008D836A</string>
-				<string>63032CE019D21E20008D836A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CDF19D21E20008D836A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTRecordTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CE019D21E20008D836A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTRecordTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CE119D21E20008D836A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63032CE019D21E20008D836A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63032CE219D22213008D836A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63032CE319D22228008D836A</string>
-				<string>63032CE419D22228008D836A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Tor</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CE319D22228008D836A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTTorManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CE419D22228008D836A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTTorManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63032CE519D22228008D836A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63032CE419D22228008D836A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB7A19D34EF70075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTStatsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB7B19D34EF70075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTStatsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB7C19D34EF70075F853</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6310DB7B19D34EF70075F853</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB7D19D34F170075F853</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63E5260F19D22F7300E21816</string>
-				<string>63E5261019D22F7300E21816</string>
-				<string>6310DB7E19D34F240075F853</string>
-				<string>6310DB7F19D34F240075F853</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB7E19D34F240075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTStatsController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB7F19D34F240075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTStatsController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8019D34F240075F853</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6310DB7F19D34F240075F853</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB8119D359580075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTLabelValueViewObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8219D359580075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTLabelValueViewObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8319D359580075F853</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6310DB8219D359580075F853</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB8419D35A380075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTRecordViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8519D35A380075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTRecordViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8619D35A380075F853</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6310DB8519D35A380075F853</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB8719D35C3B0075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSDateFormatter+TorTest.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8819D35C3B0075F853</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDateFormatter+TorTest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6310DB8919D35C3B0075F853</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6310DB8819D35C3B0075F853</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6310DB8A19D361870075F853</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6310DB8719D35C3B0075F853</string>
-				<string>6310DB8819D35C3B0075F853</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Categories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D1419D1E1E7008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D1F19D1E1E8008969CB</string>
-				<string>634B8D3919D1E1E8008969CB</string>
-				<string>634B8D1E19D1E1E8008969CB</string>
-				<string>B84FD5EF8B184B9498EEE4C6</string>
-				<string>14B89760B6867332888FF601</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D1519D1E1E7008969CB</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0600</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>David Chiles</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>634B8D1C19D1E1E7008969CB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.0.1</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.BackgroundModes</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>634B8D3519D1E1E8008969CB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.0.1</string>
-						<key>TestTargetID</key>
-						<string>634B8D1C19D1E1E7008969CB</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>634B8D1819D1E1E7008969CB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>634B8D1419D1E1E7008969CB</string>
-			<key>productRefGroup</key>
-			<string>634B8D1E19D1E1E8008969CB</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>634B8D1C19D1E1E7008969CB</string>
-				<string>634B8D3519D1E1E8008969CB</string>
-			</array>
-		</dict>
-		<key>634B8D1819D1E1E7008969CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>634B8D3E19D1E1E8008969CB</string>
-				<string>634B8D3F19D1E1E8008969CB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>634B8D1919D1E1E7008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>63A20A3719D2067600AE0481</string>
-				<string>6360A84319D1FB49001E50FC</string>
-				<string>63A20A2F19D1FF7C00AE0481</string>
-				<string>634B8D2619D1E1E8008969CB</string>
-				<string>634B8D2319D1E1E8008969CB</string>
-				<string>63032CE519D22228008D836A</string>
-				<string>6310DB8919D35C3B0075F853</string>
-				<string>6310DB7C19D34EF70075F853</string>
-				<string>63E5261119D22F7300E21816</string>
-				<string>6360A84619D1FB68001E50FC</string>
-				<string>6310DB8019D34F240075F853</string>
-				<string>6310DB8319D359580075F853</string>
-				<string>63A20A3419D202D900AE0481</string>
-				<string>63032CE119D21E20008D836A</string>
-				<string>6310DB8619D35A380075F853</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D1A19D1E1E7008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>76B893583269488D963E0425</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D1B19D1E1E7008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>634B8D3119D1E1E8008969CB</string>
-				<string>634B8D2E19D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D1C19D1E1E7008969CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>634B8D4019D1E1E8008969CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>32527C960F3E4FBA90F47890</string>
-				<string>634B8D1919D1E1E7008969CB</string>
-				<string>634B8D1A19D1E1E7008969CB</string>
-				<string>634B8D1B19D1E1E7008969CB</string>
-				<string>E43B268A25E149ACA5AC8F62</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TorTest</string>
-			<key>productName</key>
-			<string>TorTest</string>
-			<key>productReference</key>
-			<string>634B8D1D19D1E1E8008969CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>634B8D1D19D1E1E8008969CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TorTest.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>634B8D1E19D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D1D19D1E1E8008969CB</string>
-				<string>634B8D3619D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D1F19D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D2419D1E1E8008969CB</string>
-				<string>634B8D2519D1E1E8008969CB</string>
-				<string>6310DB8A19D361870075F853</string>
-				<string>6310DB7D19D34F170075F853</string>
-				<string>63032CE219D22213008D836A</string>
-				<string>63032CDE19D21E08008D836A</string>
-				<string>63A20A2C19D1FF6900AE0481</string>
-				<string>63A20A2B19D1FE2500AE0481</string>
-				<string>6360A84019D1FB10001E50FC</string>
-				<string>634B8D2D19D1E1E8008969CB</string>
-				<string>634B8D2F19D1E1E8008969CB</string>
-				<string>634B8D2019D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TorTest</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2019D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D2119D1E1E8008969CB</string>
-				<string>634B8D2219D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2119D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2219D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2319D1E1E8008969CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>634B8D2219D1E1E8008969CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>634B8D2419D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2519D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2619D1E1E8008969CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>634B8D2519D1E1E8008969CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>634B8D2D19D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D2E19D1E1E8008969CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>634B8D2D19D1E1E8008969CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>634B8D2F19D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D3019D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3019D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3119D1E1E8008969CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>634B8D2F19D1E1E8008969CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>634B8D3219D1E1E8008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>634B8D3D19D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D3319D1E1E8008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D3419D1E1E8008969CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>634B8D3519D1E1E8008969CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>634B8D4319D1E1E8008969CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>634B8D3219D1E1E8008969CB</string>
-				<string>634B8D3319D1E1E8008969CB</string>
-				<string>634B8D3419D1E1E8008969CB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>634B8D3819D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TorTestTests</string>
-			<key>productName</key>
-			<string>TorTestTests</string>
-			<key>productReference</key>
-			<string>634B8D3619D1E1E8008969CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>634B8D3619D1E1E8008969CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TorTestTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>634B8D3719D1E1E8008969CB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>634B8D1519D1E1E7008969CB</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>634B8D1C19D1E1E7008969CB</string>
-			<key>remoteInfo</key>
-			<string>TorTest</string>
-		</dict>
-		<key>634B8D3819D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>634B8D1C19D1E1E7008969CB</string>
-			<key>targetProxy</key>
-			<string>634B8D3719D1E1E8008969CB</string>
-		</dict>
-		<key>634B8D3919D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D3C19D1E1E8008969CB</string>
-				<string>634B8D3A19D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TorTestTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3A19D1E1E8008969CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>634B8D3B19D1E1E8008969CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3B19D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3C19D1E1E8008969CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TorTestTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>634B8D3D19D1E1E8008969CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>634B8D3C19D1E1E8008969CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>634B8D3E19D1E1E8008969CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>634B8D3F19D1E1E8008969CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>634B8D4019D1E1E8008969CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>634B8D4119D1E1E8008969CB</string>
-				<string>634B8D4219D1E1E8008969CB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>634B8D4119D1E1E8008969CB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AEF688A157A52E3D7546FAED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TorTest/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>634B8D4219D1E1E8008969CB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B752611DF30AC5CB3E7E0170</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TorTest/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>634B8D4319D1E1E8008969CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>634B8D4419D1E1E8008969CB</string>
-				<string>634B8D4519D1E1E8008969CB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>634B8D4419D1E1E8008969CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>TorTestTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>634B8D4519D1E1E8008969CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>TorTestTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6360A84019D1FB10001E50FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6360A84119D1FB49001E50FC</string>
-				<string>6360A84219D1FB49001E50FC</string>
-				<string>6360A84419D1FB68001E50FC</string>
-				<string>6360A84519D1FB68001E50FC</string>
-				<string>6310DB8119D359580075F853</string>
-				<string>6310DB8219D359580075F853</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6360A84119D1FB49001E50FC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTDatabaseModel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6360A84219D1FB49001E50FC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTDatabaseModel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6360A84319D1FB49001E50FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6360A84219D1FB49001E50FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6360A84419D1FB68001E50FC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTTestRecord.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6360A84519D1FB68001E50FC</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTTestRecord.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6360A84619D1FB68001E50FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6360A84519D1FB68001E50FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63A20A2B19D1FE2500AE0481</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63A20A3519D2067600AE0481</string>
-				<string>63A20A3619D2067600AE0481</string>
-				<string>6310DB7A19D34EF70075F853</string>
-				<string>6310DB7B19D34EF70075F853</string>
-				<string>6310DB8419D35A380075F853</string>
-				<string>6310DB8519D35A380075F853</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A2C19D1FF6900AE0481</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>63A20A2D19D1FF7C00AE0481</string>
-				<string>63A20A2E19D1FF7C00AE0481</string>
-				<string>63A20A3219D202D900AE0481</string>
-				<string>63A20A3319D202D900AE0481</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Storage</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A2D19D1FF7C00AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTDatabaseManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A2E19D1FF7C00AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTDatabaseManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A2F19D1FF7C00AE0481</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63A20A2E19D1FF7C00AE0481</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63A20A3219D202D900AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTDatabaseViewManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A3319D202D900AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTDatabaseViewManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A3419D202D900AE0481</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63A20A3319D202D900AE0481</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63A20A3519D2067600AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTRecordTableViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A3619D2067600AE0481</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTRecordTableViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63A20A3719D2067600AE0481</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63A20A3619D2067600AE0481</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>63E5260F19D22F7300E21816</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TRTBackgroundManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63E5261019D22F7300E21816</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TRTBackgroundManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63E5261119D22F7300E21816</key>
-		<dict>
-			<key>fileRef</key>
-			<string>63E5261019D22F7300E21816</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>76B893583269488D963E0425</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0BB8903907064341A6574348</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AEF688A157A52E3D7546FAED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B752611DF30AC5CB3E7E0170</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B84FD5EF8B184B9498EEE4C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0BB8903907064341A6574348</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E43B268A25E149ACA5AC8F62</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>634B8D1519D1E1E7008969CB</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */; };
+		63032CE519D22228008D836A /* TRTTorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63032CE419D22228008D836A /* TRTTorManager.m */; };
+		6310DB7C19D34EF70075F853 /* TRTStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */; };
+		6310DB8019D34F240075F853 /* TRTStatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB7F19D34F240075F853 /* TRTStatsController.m */; };
+		6310DB8319D359580075F853 /* TRTLabelValueViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */; };
+		6310DB8619D35A380075F853 /* TRTRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8519D35A380075F853 /* TRTRecordViewController.m */; };
+		6310DB8919D35C3B0075F853 /* NSDateFormatter+TorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */; };
+		634B8D2319D1E1E8008969CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2219D1E1E8008969CB /* main.m */; };
+		634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D2519D1E1E8008969CB /* AppDelegate.m */; };
+		634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2D19D1E1E8008969CB /* Images.xcassets */; };
+		634B8D3119D1E1E8008969CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */; };
+		634B8D3D19D1E1E8008969CB /* TorTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B8D3C19D1E1E8008969CB /* TorTestTests.m */; };
+		6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */; };
+		6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360A84519D1FB68001E50FC /* TRTTestRecord.m */; };
+		63803D6E1A267482006CB72F /* TRTURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 63803D6D1A267482006CB72F /* TRTURLProtocol.m */; };
+		63803D711A267690006CB72F /* CKHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 63803D701A267690006CB72F /* CKHTTPConnection.m */; };
+		63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */; };
+		63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */; };
+		63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */; };
+		63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5261019D22F7300E21816 /* TRTBackgroundManager.m */; };
+		76B893583269488D963E0425 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB8903907064341A6574348 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		634B8D3719D1E1E8008969CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 634B8D1519D1E1E7008969CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634B8D1C19D1E1E7008969CB;
+			remoteInfo = TorTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BB8903907064341A6574348 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63032CDF19D21E20008D836A /* TRTRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordTableViewCell.h; sourceTree = "<group>"; };
+		63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewCell.m; sourceTree = "<group>"; };
+		63032CE319D22228008D836A /* TRTTorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTorManager.h; sourceTree = "<group>"; };
+		63032CE419D22228008D836A /* TRTTorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTorManager.m; sourceTree = "<group>"; };
+		6310DB7A19D34EF70075F853 /* TRTStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTStatsViewController.h; sourceTree = "<group>"; };
+		6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTStatsViewController.m; sourceTree = "<group>"; };
+		6310DB7E19D34F240075F853 /* TRTStatsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTStatsController.h; sourceTree = "<group>"; };
+		6310DB7F19D34F240075F853 /* TRTStatsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTStatsController.m; sourceTree = "<group>"; };
+		6310DB8119D359580075F853 /* TRTLabelValueViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTLabelValueViewObject.h; sourceTree = "<group>"; };
+		6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTLabelValueViewObject.m; sourceTree = "<group>"; };
+		6310DB8419D35A380075F853 /* TRTRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordViewController.h; sourceTree = "<group>"; };
+		6310DB8519D35A380075F853 /* TRTRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordViewController.m; sourceTree = "<group>"; };
+		6310DB8719D35C3B0075F853 /* NSDateFormatter+TorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TorTest.h"; sourceTree = "<group>"; };
+		6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TorTest.m"; sourceTree = "<group>"; };
+		634B8D1D19D1E1E8008969CB /* TorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		634B8D2119D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634B8D2219D1E1E8008969CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		634B8D2419D1E1E8008969CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		634B8D2519D1E1E8008969CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		634B8D2D19D1E1E8008969CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		634B8D3019D1E1E8008969CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		634B8D3619D1E1E8008969CB /* TorTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		634B8D3B19D1E1E8008969CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634B8D3C19D1E1E8008969CB /* TorTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorTestTests.m; sourceTree = "<group>"; };
+		6360A84119D1FB49001E50FC /* TRTDatabaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseModel.h; sourceTree = "<group>"; };
+		6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseModel.m; sourceTree = "<group>"; };
+		6360A84419D1FB68001E50FC /* TRTTestRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTTestRecord.h; sourceTree = "<group>"; };
+		6360A84519D1FB68001E50FC /* TRTTestRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTTestRecord.m; sourceTree = "<group>"; };
+		63803D6C1A267482006CB72F /* TRTURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTURLProtocol.h; sourceTree = "<group>"; };
+		63803D6D1A267482006CB72F /* TRTURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTURLProtocol.m; sourceTree = "<group>"; };
+		63803D701A267690006CB72F /* CKHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKHTTPConnection.m; sourceTree = "<group>"; };
+		63803D721A26769A006CB72F /* CKHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKHTTPConnection.h; sourceTree = "<group>"; };
+		63A20A2D19D1FF7C00AE0481 /* TRTDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseManager.h; sourceTree = "<group>"; };
+		63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseManager.m; sourceTree = "<group>"; };
+		63A20A3219D202D900AE0481 /* TRTDatabaseViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTDatabaseViewManager.h; sourceTree = "<group>"; };
+		63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTDatabaseViewManager.m; sourceTree = "<group>"; };
+		63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTRecordTableViewController.h; sourceTree = "<group>"; };
+		63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTRecordTableViewController.m; sourceTree = "<group>"; };
+		63E5260F19D22F7300E21816 /* TRTBackgroundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTBackgroundManager.h; sourceTree = "<group>"; };
+		63E5261019D22F7300E21816 /* TRTBackgroundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTBackgroundManager.m; sourceTree = "<group>"; };
+		AEF688A157A52E3D7546FAED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B752611DF30AC5CB3E7E0170 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		634B8D1A19D1E1E7008969CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B893583269488D963E0425 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3319D1E1E8008969CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B89760B6867332888FF601 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEF688A157A52E3D7546FAED /* Pods.debug.xcconfig */,
+				B752611DF30AC5CB3E7E0170 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63032CDE19D21E08008D836A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63032CDF19D21E20008D836A /* TRTRecordTableViewCell.h */,
+				63032CE019D21E20008D836A /* TRTRecordTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		63032CE219D22213008D836A /* Tor */ = {
+			isa = PBXGroup;
+			children = (
+				63803D721A26769A006CB72F /* CKHTTPConnection.h */,
+				63803D701A267690006CB72F /* CKHTTPConnection.m */,
+				63032CE319D22228008D836A /* TRTTorManager.h */,
+				63032CE419D22228008D836A /* TRTTorManager.m */,
+			);
+			name = Tor;
+			sourceTree = "<group>";
+		};
+		6310DB7D19D34F170075F853 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63E5260F19D22F7300E21816 /* TRTBackgroundManager.h */,
+				63E5261019D22F7300E21816 /* TRTBackgroundManager.m */,
+				6310DB7E19D34F240075F853 /* TRTStatsController.h */,
+				6310DB7F19D34F240075F853 /* TRTStatsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6310DB8A19D361870075F853 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6310DB8719D35C3B0075F853 /* NSDateFormatter+TorTest.h */,
+				6310DB8819D35C3B0075F853 /* NSDateFormatter+TorTest.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		634B8D1419D1E1E7008969CB = {
+			isa = PBXGroup;
+			children = (
+				634B8D1F19D1E1E8008969CB /* TorTest */,
+				634B8D3919D1E1E8008969CB /* TorTestTests */,
+				634B8D1E19D1E1E8008969CB /* Products */,
+				B84FD5EF8B184B9498EEE4C6 /* Frameworks */,
+				14B89760B6867332888FF601 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		634B8D1E19D1E1E8008969CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D1D19D1E1E8008969CB /* TorTest.app */,
+				634B8D3619D1E1E8008969CB /* TorTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		634B8D1F19D1E1E8008969CB /* TorTest */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D2419D1E1E8008969CB /* AppDelegate.h */,
+				634B8D2519D1E1E8008969CB /* AppDelegate.m */,
+				63803D6C1A267482006CB72F /* TRTURLProtocol.h */,
+				63803D6D1A267482006CB72F /* TRTURLProtocol.m */,
+				6310DB8A19D361870075F853 /* Categories */,
+				6310DB7D19D34F170075F853 /* Controllers */,
+				63032CE219D22213008D836A /* Tor */,
+				63032CDE19D21E08008D836A /* Views */,
+				63A20A2C19D1FF6900AE0481 /* Storage */,
+				63A20A2B19D1FE2500AE0481 /* ViewController */,
+				6360A84019D1FB10001E50FC /* Model */,
+				634B8D2D19D1E1E8008969CB /* Images.xcassets */,
+				634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */,
+				634B8D2019D1E1E8008969CB /* Supporting Files */,
+			);
+			path = TorTest;
+			sourceTree = "<group>";
+		};
+		634B8D2019D1E1E8008969CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D2119D1E1E8008969CB /* Info.plist */,
+				634B8D2219D1E1E8008969CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		634B8D3919D1E1E8008969CB /* TorTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D3C19D1E1E8008969CB /* TorTestTests.m */,
+				634B8D3A19D1E1E8008969CB /* Supporting Files */,
+			);
+			path = TorTestTests;
+			sourceTree = "<group>";
+		};
+		634B8D3A19D1E1E8008969CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				634B8D3B19D1E1E8008969CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6360A84019D1FB10001E50FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6360A84119D1FB49001E50FC /* TRTDatabaseModel.h */,
+				6360A84219D1FB49001E50FC /* TRTDatabaseModel.m */,
+				6360A84419D1FB68001E50FC /* TRTTestRecord.h */,
+				6360A84519D1FB68001E50FC /* TRTTestRecord.m */,
+				6310DB8119D359580075F853 /* TRTLabelValueViewObject.h */,
+				6310DB8219D359580075F853 /* TRTLabelValueViewObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63A20A2B19D1FE2500AE0481 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63A20A3519D2067600AE0481 /* TRTRecordTableViewController.h */,
+				63A20A3619D2067600AE0481 /* TRTRecordTableViewController.m */,
+				6310DB7A19D34EF70075F853 /* TRTStatsViewController.h */,
+				6310DB7B19D34EF70075F853 /* TRTStatsViewController.m */,
+				6310DB8419D35A380075F853 /* TRTRecordViewController.h */,
+				6310DB8519D35A380075F853 /* TRTRecordViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		63A20A2C19D1FF6900AE0481 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				63A20A2D19D1FF7C00AE0481 /* TRTDatabaseManager.h */,
+				63A20A2E19D1FF7C00AE0481 /* TRTDatabaseManager.m */,
+				63A20A3219D202D900AE0481 /* TRTDatabaseViewManager.h */,
+				63A20A3319D202D900AE0481 /* TRTDatabaseViewManager.m */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		B84FD5EF8B184B9498EEE4C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB8903907064341A6574348 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		634B8D1C19D1E1E7008969CB /* TorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634B8D4019D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTest" */;
+			buildPhases = (
+				32527C960F3E4FBA90F47890 /* Check Pods Manifest.lock */,
+				634B8D1919D1E1E7008969CB /* Sources */,
+				634B8D1A19D1E1E7008969CB /* Frameworks */,
+				634B8D1B19D1E1E7008969CB /* Resources */,
+				E43B268A25E149ACA5AC8F62 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorTest;
+			productName = TorTest;
+			productReference = 634B8D1D19D1E1E8008969CB /* TorTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		634B8D3519D1E1E8008969CB /* TorTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634B8D4319D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTestTests" */;
+			buildPhases = (
+				634B8D3219D1E1E8008969CB /* Sources */,
+				634B8D3319D1E1E8008969CB /* Frameworks */,
+				634B8D3419D1E1E8008969CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634B8D3819D1E1E8008969CB /* PBXTargetDependency */,
+			);
+			name = TorTestTests;
+			productName = TorTestTests;
+			productReference = 634B8D3619D1E1E8008969CB /* TorTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		634B8D1519D1E1E7008969CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "David Chiles";
+				TargetAttributes = {
+					634B8D1C19D1E1E7008969CB = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					634B8D3519D1E1E8008969CB = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 634B8D1C19D1E1E7008969CB;
+					};
+				};
+			};
+			buildConfigurationList = 634B8D1819D1E1E7008969CB /* Build configuration list for PBXProject "TorTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 634B8D1419D1E1E7008969CB;
+			productRefGroup = 634B8D1E19D1E1E8008969CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				634B8D1C19D1E1E7008969CB /* TorTest */,
+				634B8D3519D1E1E8008969CB /* TorTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		634B8D1B19D1E1E7008969CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B8D3119D1E1E8008969CB /* LaunchScreen.xib in Resources */,
+				634B8D2E19D1E1E8008969CB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3419D1E1E8008969CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32527C960F3E4FBA90F47890 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E43B268A25E149ACA5AC8F62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		634B8D1919D1E1E7008969CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A20A3719D2067600AE0481 /* TRTRecordTableViewController.m in Sources */,
+				6360A84319D1FB49001E50FC /* TRTDatabaseModel.m in Sources */,
+				63A20A2F19D1FF7C00AE0481 /* TRTDatabaseManager.m in Sources */,
+				634B8D2619D1E1E8008969CB /* AppDelegate.m in Sources */,
+				634B8D2319D1E1E8008969CB /* main.m in Sources */,
+				63032CE519D22228008D836A /* TRTTorManager.m in Sources */,
+				6310DB8919D35C3B0075F853 /* NSDateFormatter+TorTest.m in Sources */,
+				6310DB7C19D34EF70075F853 /* TRTStatsViewController.m in Sources */,
+				63E5261119D22F7300E21816 /* TRTBackgroundManager.m in Sources */,
+				6360A84619D1FB68001E50FC /* TRTTestRecord.m in Sources */,
+				63803D6E1A267482006CB72F /* TRTURLProtocol.m in Sources */,
+				6310DB8019D34F240075F853 /* TRTStatsController.m in Sources */,
+				6310DB8319D359580075F853 /* TRTLabelValueViewObject.m in Sources */,
+				63A20A3419D202D900AE0481 /* TRTDatabaseViewManager.m in Sources */,
+				63032CE119D21E20008D836A /* TRTRecordTableViewCell.m in Sources */,
+				6310DB8619D35A380075F853 /* TRTRecordViewController.m in Sources */,
+				63803D711A267690006CB72F /* CKHTTPConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634B8D3219D1E1E8008969CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634B8D3D19D1E1E8008969CB /* TorTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		634B8D3819D1E1E8008969CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 634B8D1C19D1E1E7008969CB /* TorTest */;
+			targetProxy = 634B8D3719D1E1E8008969CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		634B8D2F19D1E1E8008969CB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				634B8D3019D1E1E8008969CB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		634B8D3E19D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		634B8D3F19D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		634B8D4119D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF688A157A52E3D7546FAED /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		634B8D4219D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B752611DF30AC5CB3E7E0170 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TorTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		634B8D4419D1E1E8008969CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest";
+			};
+			name = Debug;
+		};
+		634B8D4519D1E1E8008969CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TorTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TorTest.app/TorTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		634B8D1819D1E1E7008969CB /* Build configuration list for PBXProject "TorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D3E19D1E1E8008969CB /* Debug */,
+				634B8D3F19D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634B8D4019D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D4119D1E1E8008969CB /* Debug */,
+				634B8D4219D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634B8D4319D1E1E8008969CB /* Build configuration list for PBXNativeTarget "TorTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634B8D4419D1E1E8008969CB /* Debug */,
+				634B8D4519D1E1E8008969CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 634B8D1519D1E1E7008969CB /* Project object */;
+}
